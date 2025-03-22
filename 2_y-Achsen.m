@@ -19,7 +19,6 @@ xlabel('Kreisfrequenz \omega (s^{-1})', 'FontSize', 14);
 ylabel('Verstärkung (dB)', 'FontSize', 14);
 title('Bode-Diagramm für ein RL-Element', 'FontSize', 16);
 grid on;
-hold on;
 
 % Funktion 2
 ax2 = axes(); % Achse der zweiten Funktion wird angesprochen
@@ -32,12 +31,12 @@ set(ax1, 'Position', get(ax2, 'Position')); % Hol die Position von Achse 2 und s
 set(ax1, 'Box', 'off'); % Kein Kasten um die Achse
 
 % Achsenbeschriftung & Titel setzen
-
 legend(ax1, 'Verstärkung', 'Location', 'Southwest');
 legend(ax2, 'Phase', 'Location', 'NorthEast');
 
+% Limits für die entsprechenden Achsen
 ylim(ax1, [-50, 50]); % Begrenze Y-Achse auf -50 dB bis +50 dB
-ylim(ax2, [-100, 100]); % Begrenze Y-Achse auf -50 dB bis +50 dB
+ylim(ax2, [-100, 100]); % Begrenze Y-Achse auf -100 Grad bis 100 Grad
 
 
 
