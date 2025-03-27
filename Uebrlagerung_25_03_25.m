@@ -17,7 +17,7 @@ omega = logspace (0, 10, 100);
 
   % Übertragungsfunktoon
   %Vu = -(ke ./ kr)*(1 ./ (1-(1 ./ V0 * kr))); % Detaillierter aufgeschrieben
-  Vu = (V0*ke) ./ (1-(V0*kr)); % Einfachste Form
+  Vu = (V0*ke) ./ (1-(V0*kr)); % Einfache Form
 
   % in dB
   dB_Vu = 20 * log10(Vu); % Umwandlung in dB
